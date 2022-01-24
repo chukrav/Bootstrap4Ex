@@ -1,0 +1,15 @@
+
+% W1: Exercise (Video): Basics of Node.js and NPM -----
+npm init
+% follow questions ... makes package.json
+npm install lite-server --save-dev
+% to install lite-server and save it to use in the project -dev for module from 
+% which my project directly dependent. and will be included in "devDependencies"
+% in "scripts" add "start" - will run things ... 
+"start": "npm run lite",
+. . . . . .
+"lite": "lite-server"   % <- looks like aliace?!?!
+%----------
+npm start   % <- to start in cmd
+%--------------------------------------------------------
+%   Introduction to Bootstrap: Exercise (Video): Getting Started with Bootstrap
