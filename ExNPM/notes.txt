@@ -13,3 +13,25 @@ npm install lite-server --save-dev
 npm start   % <- to start in cmd
 %--------------------------------------------------------
 %   Introduction to Bootstrap: Exercise (Video): Getting Started with Bootstrap
+% In conFusion :
+npm install           % <- will install the lite-server
+
+npm install bootstrap@4.0.0 --save
+npm install jquery@3.3.1 popper.js@1.12.9 --save    % <- will install bootstrap & jquery
+
+% Insert the following code in the <head> of index.html file before the title.
+<!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+% At the bottom of the page, just before the end of the body tag
+<!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+%   Introduction to Bootstrap: Exercise (Instructions): Getting Started with Bootstrap
