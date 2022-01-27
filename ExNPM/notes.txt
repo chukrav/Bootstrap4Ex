@@ -35,3 +35,4 @@ npm install jquery@3.3.1 popper.js@1.12.9 --save    % <- will install bootstrap 
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 %   Introduction to Bootstrap: Exercise (Instructions): Getting Started with Bootstrap
+https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css  <- set extension for VS-code
