@@ -36,3 +36,12 @@ npm install jquery@3.3.1 popper.js@1.12.9 --save    % <- will install bootstrap 
 
 %   Introduction to Bootstrap: Exercise (Instructions): Getting Started with Bootstrap
 https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css  <- set extension for VS-code
+
+% You can get Font Awesome using npm by typing the following at the prompt:
+npm install font-awesome@4.7.0 --save
+% Bootstrap Social that enables the addition of Social buttons to our site:
+npm install bootstrap-social@5.1.1 --save
+% to include the CSS files for font awesome and bootstrap-social in the index.html :
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+
