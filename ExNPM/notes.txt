@@ -43,5 +43,21 @@ npm install font-awesome@4.7.0 --save
 npm install bootstrap-social@5.1.1 --save
 % to include the CSS files for font awesome and bootstrap-social in the index.html :
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    
+Less & Sass ----------------
+Less:
+>> npm install -g less@2.7.2
+Next type the following at the command prompt to compile the Less file 
+into a CSS file:
+>> lessc styles.less styles.css
+
+Sass:
+>> npm install --save-dev node-sass@4.7.2
+Next open your package.json file and add the following line into the scripts
+object there.  This adds a script to enable the compilation of the Scss file
+into a CSS file:
+    "scss": "node-sass -o css/ css/"
+In order to transform the Scss file to a CSS file, type the 
+following at the prompt:
+>> npm run scss
 
