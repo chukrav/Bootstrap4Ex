@@ -47,23 +47,11 @@ body {
       left: 0;
       min-height: 300px; }
 
-  .modal-header {
-      background: #512DA8;
-      color: #ddd;
-  }
-  .modal-body {
-    background: #9575CD;
-  }
-  .close {
+.modal {
+  background: #9575CD; }
+  .modal .modal-header {
     background: #512DA8;
-    color: #ddd;
-  }
-
-  .close:hover {
-    background: #512DA8;
-    color: rgb(247, 186, 186);
-  }
-  
+    color: #ddd; }
 
 #carouselButton {
   right: 0px;

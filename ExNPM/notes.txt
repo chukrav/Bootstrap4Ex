@@ -61,3 +61,19 @@ In order to transform the Scss file to a CSS file, type the
 following at the prompt:
 >> npm run scss
 
+Watching for Changes and Parallelshell.
+>> npm install --save-dev onchange@3.3.0 parallelshell@3.0.2
+Then, add the following two script items to package.json:
+"watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+"watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
+
+You will also update the start script as follows:
+"start": "npm run watch:all",
+But! parallelshell doesn't works ...
+So: 
+"watch:all": "\"npm run lite\"" - after all suffering!!!
+
+Downgrading the parallelshell version from 3.0.2 to 3.0.1
+sudo npm uninstall --save-dev parallelshell@3.0.2
+sudo npm install --save-dev parallelshell@3.0.1
+It does works! :)
