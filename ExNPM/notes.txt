@@ -77,3 +77,6 @@ Downgrading the parallelshell version from 3.0.2 to 3.0.1
 sudo npm uninstall --save-dev parallelshell@3.0.2
 sudo npm install --save-dev parallelshell@3.0.1
 It does works! :)
+
+Building command: see package.json
+>> npm run build
