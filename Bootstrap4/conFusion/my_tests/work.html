@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Website Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+  <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+  <!-- <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+
+  <style>
+  .fakeimg {
+    height: 348px;
+    background: #aaa;
+    margin-bottom: 5px;
+  }
+
+  /* not active */
+.nav-pills .nav-link:not(.active) {
+    background-color: rgba(27, 26, 26, 0.5);
+    color: rgb(245, 240, 240);
+}
+
+
+/* active (faded) */
+.nav-pills .nav-link.active {
+    background-color: rgba(27, 26, 26, 0.2);
+    color: rgb(12, 12, 12);
+}
+
+.image {
+  display: block;
+  width: auto;
+  height: 348px;
+  margin-bottom: 5px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 18vw;
+    object-fit: contain;
+}
+
+.card-img-height {
+    width: 100%;
+    height: 18vw;
+    /* height: 348px; */
+    object-position: 65% 0;
+    object-fit: cover;
+}
+
+.embed-responsive .card-img-top {
+    object-fit: cover;
+}
+
+         
+  </style>
+</head>
+<body>
+
+<div class="jumbotron text-center bg-light" style="margin-bottom:0">
+  <h1 class="display-1">My first website run by me</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>
+
+<div class="container-fluid" style="margin-top:30px">
+  <div class="row">
+    <div class="col-md-4">
+      <h2>See what I have done</h2>
+      <h5>My works:</h5>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-md-8">
+      <h2 class="display-4 font-weight-bold">Hi, I'm Natalia Kravtchouk!</h2>
+      <h5>Scroll down to see my Art work, Aug 20, 2022</h5>
+      <div class="row">
+        <div class="col pr-1">
+            <div ></div>
+            <img src="./images/work/W1L.jpg" alt="Avatar" class="card-img-top">
+            <!-- <div class="fakeimg">Image</div> -->
+        </div>
+        <div class="col pl-0">
+            <img src="./images/work/W1R.jpg" alt="Avatar" class="card-img-top">
+            <!-- <div class="fakeimg">Image</div> -->
+        </div>
+      </div> 
+      <div class="row">
+        <div class="col pr-1">
+            <img src="./images/work/W2L.png" alt="Avatar" class="card-img-top">
+            <!-- <div class="fakeimg">Image</div> -->
+        </div>
+        <div class="col pl-0">
+            <img src="./images/work/W2R.png" alt="Avatar" class="card-img-top">
+            <!-- <div class="fakeimg">Image</div> -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col pr-1">
+            <img src="./images/work/W3L.jpg" alt="Avatar" class="card-img-top">
+            <!-- <div class="fakeimg">Image</div> -->
+        </div>
+        <div class="col pl-0">
+            <img src="./images/work/W3R.jpg" alt="Avatar" class="card-img-top">
+            <!-- <div class="fakeimg">Image</div> -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col pr-1">
+            <img src="./images/work/W4L.jpg" alt="Avatar" class="card-img-top">
+            <!-- <div class="fakeimg">Image</div> -->
+        </div>
+        <div class="col pl-0">
+          <img src="./images/work/W4R.png" alt="Avatar" class="card-img-top">
+            <!-- <div class="fakeimg">Image</div> -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col pr-1">
+          <img src="./images/work/W5L.png" alt="Avatar" class="card-img-top">
+            <!-- <div class="fakeimg">Image</div> -->
+        </div>
+        <div class="col pl-0">
+          <img src="./images/work/W5R.png" alt="Avatar" class="card-img-top">
+            <!-- <div class="fakeimg">Image</div> -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col pr-1">
+          <img src="./images/work/W6L.png" alt="Avatar" class="card-img-top">
+            <!-- <div class="fakeimg">Image</div> -->
+        </div>
+        <div class="col pl-0">
+          <img src="./images/work/W6R.png" alt="Avatar" class="card-img-top">
+            <!-- <div class="fakeimg">Image</div> -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col pr-1">
+            <img src="./images/work/W7L.png" alt="Avatar" class="card-img-top">
+            <!-- <div class="fakeimg">Image</div> -->
+        </div>
+        <div class="col pl-0">
+          <img src="./images/work/W7R.png" alt="Avatar" class="card-img-top">
+            <!-- <div class="fakeimg">Image</div> -->
+        </div>
+      </div>     
+          
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>Footer</p>
+</div>
+
+</body>
+</html>

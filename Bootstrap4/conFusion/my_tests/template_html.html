@@ -1,0 +1,53 @@
+<html> 
+  <head>
+    <title>Hello World</title> 
+
+     <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+  <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <style>
+        .row {
+            display: flex;
+        }
+
+        .column {
+            flex: 50%;
+            padding: 16px;
+        }
+
+        .one {
+            background-color: tomato;
+            position: sticky;
+            top: 0;
+            height: min-content;
+        }
+
+        .two {
+            background-color: #33a8ff;
+            height: 5000px;
+        }
+
+        html,
+        body {
+            margin: 0;
+        }
+    </style>
+  </head>
+
+  <body> 
+    <h1>Hello World</h1> 
+    <div class="row">
+        <div class="column one col-md-4">
+          <h2> column #1 </h2>
+          <p>menu items</p>
+        </div>
+        <div class="column two col-md-8">
+          <h2>column #2</h2>
+          <p> Some contents in column 2 </p>
+        </div>
+  </body>
+</html>
