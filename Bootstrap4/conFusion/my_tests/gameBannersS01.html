@@ -17,6 +17,11 @@
   <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
 
   <style>
+
+.fakeimg {
+    height: 80px;
+    background-color: white;
+  }
   
   /* not active */
 .nav-pills {
@@ -66,7 +71,7 @@
 
 .text {
   color: white;
-  font-size: 36px;
+  font-size: 28px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -77,23 +82,34 @@
 }
 
 .zoom-in {cursor: zoom-in;}
+
+a:link, a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  font-size:  22px;
+  font-style: italic;
+}
          
   </style>
 </head>
 <body>
 
 <div class="jumbotron text-center bg-light" style="margin-bottom:0">
-  <h1 class="display-1">Game Banners and Splashscreens</h1>
+  <h1 class="display-2">Game Banners and Splashscreens</h1>
 </div>
 
 <div class="container-fluid" style="margin-top:30px">
   <div class="row">
     <div class="col-md-3" style="width: 20%;">
-      <h2>See what I have done</h2>
-      <h5>My works:</h5>
+      <h2>Natalia Kravtchouk</h2>
+      <div style="height: 30px;"></div>
+      <!-- <h5>My works:</h5> -->
       <ul class="nav nav-pills flex-column">
         <li class="nav-item">
-          <a class="nav-link" href="#">Work</a>
+          <a class="nav-link" href="work.html">Work</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="#">Game Banners and Splashscreens</a>
@@ -145,8 +161,9 @@
       <hr class="d-sm-none">
     </div>
     <div class="col-md-8">
-      <h2 class="display-4 font-weight-bold">Hi, I'm Natalia Kravtchouk!</h2>
-      <h5>Scroll down to see my Art work, Aug 20, 2022</h5>
+      <!-- <h2 class="display-4 font-weight-bold">Hi, I'm Natalia Kravtchouk!</h2> -->
+      <!-- <h5>Scroll down to see my Art work, Aug 20, 2022</h5> -->
+      <div class="fakeimg"></div>
       <div class="row">
         <a href="#" class="zoom-in">
           <img src="./images/images_01/beed5243-7f6d-4186-a83d-928a5ca7cf31.jpg" alt="Avatar" class="card-img-top">
@@ -217,16 +234,21 @@
   </div>
 </div>
 
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <h3>You may also like</H3>
+<div class="jumbotron text-center" style="margin-bottom:0; padding-right: 200px;">
   <div class="row">
-    <div class="col pr-1 container">
+    
+      <div class="col-4"></div>
+      <div class="col-8"><h3>You may also like these</H3></div>
+  </div>
+  <div class="row">
+    <div class="col-4 pr-1"></div>
+    <div class="col-4 pr-1 container">
       <img src="./images/work/W5L.png" alt="Avatar" class="card-img-top">
       <div class="overlay" >
         <a class="text" href="gameBannersS01.html"><p>2017</p>Designe of environment, set dressing</a>
       </div>
     </div>
-    <div class="col pl-0 container">
+    <div class="col-4 pl-0 container">
       <img src="./images/work/W5R.png" alt="Avatar" class="card-img-top">
       <div class="overlay" >
         <a class="text" href="gameBannersS01.html"><p>2021</p>Project Gates of War (Plarium)</a>
