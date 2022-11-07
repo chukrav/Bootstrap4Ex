@@ -14,6 +14,9 @@
           width: 100%;
           height: 100%;
       }
+
+      
+
   </style>
 </head>
 <body>
@@ -21,7 +24,8 @@
 <div class="container">
   <h2>Modal Example</h2>
   <!-- Button to Open the Modal -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"> -->
+  <button type="button" class="btn btn-primary" onclick="myFunction()">
     Open modal
   </button>
   <p></p>
@@ -29,8 +33,27 @@
   <p></p>
   <img id="im-2" src="test_img/chicago.jpg" alt="Chicago" width="1100" height="500">
 
+
+  <script>
+    function openNav() {
+      // inspectDict();
+      console.log("Opening ...");
+      document.getElementById("myModal").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("myModal").style.width = "0%";
+    }
+
+    function myFunction(){
+    $("#myModal").modal('toggle'); //see here usage
+    };
+    
+    
+    </script>
+
   <!-- The Modal -->
-  <div class="modal" id="myModal">
+  <div class="modal" id="myModal" >
     <div class="modal-dialog modal-dialog-centered mw-100 w-75">
       <div class="modal-content">
       
