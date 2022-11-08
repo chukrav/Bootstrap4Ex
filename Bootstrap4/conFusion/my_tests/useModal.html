@@ -29,9 +29,11 @@
     Open modal
   </button>
   <p></p>
-  <img id="im-1" src="test_img/la.jpg" alt="Los Angeles" width="1100" height="500">
+  <img id="imb-1" src="test_img/la.jpg" alt="Los Angeles" width="1100" height="500">
   <p></p>
-  <img id="im-2" src="test_img/chicago.jpg" alt="Chicago" width="1100" height="500">
+  <img id="imb-2" src="test_img/chicago.jpg" alt="Chicago" width="1100" height="500">
+  <p></p>
+  <img id="imb-3" src="test_img/ny.jpg" alt="Chicago" width="1100" height="500">
 
 
   <script>
@@ -77,14 +79,14 @@
                 
                 <!-- The slideshow -->
                 <div class="carousel-inner">
+                  <div class="carousel-item">
+                    <img id="imm-1" src="test_img/la.jpg" alt="Los Angeles" width="1100" height="500">
+                  </div>
                   <div class="carousel-item active">
-                    <img src="test_img/la.jpg" alt="Los Angeles" width="1100" height="500">
+                    <img id="imm-2" src="test_img/chicago.jpg" alt="Chicago" width="1100" height="500">
                   </div>
                   <div class="carousel-item">
-                    <img src="test_img/chicago.jpg" alt="Chicago" width="1100" height="500">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="test_img/ny.jpg" alt="New York" width="1100" height="500">
+                    <img id="imm-3" src="test_img/ny.jpg" alt="New York" width="1100" height="500">
                   </div>
                 </div>
                 
@@ -112,13 +114,32 @@
 
 <script>
     const imgs = document.getElementsByTagName("img");
-
+    
+    const cleanAttributes = () => {
+      for (let img of imgs){
+        if(img.id.includes("imm")){
+          // img.parentElement.removeAttribute("class");
+          img.parentElement.setAttribute("class", "carousel-item");
+        }        
+      }      
+    }
+        
+    
     const imagePressed = e => {
-        console.log(e.target.id); // Get ID of Clicked Element
+      let id = e.target.id;
+      let idm = "imm-" + id.split("-")[1];
+      cleanAttributes();
+      const elt = document.getElementById(idm);
+      elt.parentElement.setAttribute("class", "carousel-item active");
+      
+      console.log(id);
     }
 
-    for (let img of imgs) {
-        img.addEventListener("click", imagePressed);
+    for (let img of imgs) {        
+        if(img.id.includes("imb")){
+         img.addEventListener("click", imagePressed);
+        }
+        // img.addEventListener("click", imagePressed);
     }
 </script>
 
