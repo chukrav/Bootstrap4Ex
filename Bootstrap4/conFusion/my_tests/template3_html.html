@@ -1,0 +1,251 @@
+<html>
+
+<head>
+  <title>Hello World</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+  <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <style>
+    .row {
+      display: flex;
+    }
+
+    .column {
+      flex: 50%;
+      padding: 16px;
+    }
+
+    .one {
+      background-color: white;
+      position: sticky;
+      top: 0;
+      height: min-content;
+    }
+
+    .two {
+      background-color: white;
+      height: min-content;
+    }
+
+    html,
+    body {
+      margin: 0;
+    }
+
+    .nav-pills {
+      font-size: 16pt;
+    }
+
+    /* not active */
+    .nav-pills .nav-link:not(.active) {
+      background-color: rgba(27, 26, 26, 0.5);
+      color: rgb(245, 240, 240);
+    }
+
+
+    /* active (faded) */
+    .nav-pills .nav-link.active {
+      background-color: rgba(27, 26, 26, 0.2);
+      color: rgb(12, 12, 12);
+    }
+
+    /* images styles */
+    .container {
+      width: 100%;
+      height: auto;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #141d3b;
+    }
+
+    .container:hover .overlay {
+      opacity: 0.85;
+    }
+
+    .text {
+      color: white;
+      font-size: 28px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    a:link,
+    a:hover {
+      text-decoration: none;
+      color: white;
+    }
+
+    p {
+      font-size: 22px;
+      font-style: italic;
+    }
+
+    .zoom-in {cursor: zoom-in;}
+
+  </style>
+</head>
+
+<body>
+  <div class="jumbotron text-center bg-light" style="margin-bottom:0">
+    <h1 class="display-4">Game Banners and Splashscreens</h1>
+    
+  </div>
+  <div class="row">
+    <div class="column one col-md-3">
+      <h2>Natalia Kravtchouk</h2>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Solitaire Game Art</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Characters design</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Items for mobile games</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Designe of environment, set dressing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Project Gates of War (Plarium)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Illustrations, storyboards</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Art for Commercials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Personal Art Projects (Scetches, watercolor paintings)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Farm game (concept art)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!--             Second column: Images           -->
+    <div class="column two col-md-9">
+      <h2 style="visibility:hidden;">column #2</h2>
+      <div class="row">
+        <a href="#" class="zoom-in">
+          <img src="./images/images_01/beed5243-7f6d-4186-a83d-928a5ca7cf31.jpg" alt="Avatar" class="card-img-top">
+        </a>
+      </div>
+      <div class="row">
+        <a href="#" class="zoom-in">
+          <img src="./images/images_01/a83301d2-e72a-4cee-91cd-1b43ab16d71f.jpg" alt="Avatar" class="card-img-top">
+          <!-- <div class="fakeimg">Image</div> -->
+        </a>
+
+      </div>
+      <div class="row">
+        <a href="#" class="zoom-in">
+          <img src="./images/images_01/72ce31f9-3e14-43c0-85cd-c491eb5e50f2.png" alt="Avatar" class="card-img-top">
+          <!-- <div class="fakeimg">Image</div> -->
+        </a>
+
+      </div>
+      <div class="row">
+        <a href="#" class="zoom-in">
+          <img src="./images/images_01/4d17ce7a-15cc-4d32-ab33-b7f17e764170Dp.jpg" alt="Avatar" class="card-img-top">
+          <!-- <div class="fakeimg">Image</div> -->
+        </a>
+
+      </div>
+      <div class="row">
+        <a href="#" class="zoom-in">
+          <img src="./images/images_01/d120ddcc-2fe8-4937-83ee-2f5c476adf40_rw_1200.jpg" alt="Avatar"
+            class="card-img-top">
+          <!-- <div class="fakeimg">Image</div> -->
+        </a>
+
+      </div>
+      <div class="row">
+        <a href="#" class="zoom-in">
+          <img src="./images/images_01/3eb801f2-8b8f-488b-aecc-8c8dea336ca1.jpg" alt="Avatar" class="card-img-top">
+          <!-- <div class="fakeimg">Image</div> -->
+        </a>
+
+      </div>
+      <div class="row">
+        <a href="#" class="zoom-in">
+          <img src="./images/images_01/705d8c6b-f7a7-4294-bf8b-766e76775c02_rw_1920.jpg" alt="Avatar"
+            class="card-img-top">
+          <!-- <div class="fakeimg">Image</div> -->
+        </a>
+      </div>
+
+      <div class="row">
+        <a href="#" class="zoom-in">
+          <img src="./images/images_01/cc9d5f45-f18e-42b6-88c3-2cb9c417a65aDp2.jpg" alt="Avatar" class="card-img-top">
+          <!-- <div class="fakeimg">Image</div> -->
+        </a>
+      </div>
+      <div class="row">
+        <a href="#" class="zoom-in">
+          <img src="./images/images_01/e289a583-7932-4d7d-8ea5-86d7c81aa15f.jpg" alt="Avatar" class="card-img-top">
+          <!-- <div class="fakeimg">Image</div> -->
+        </a>
+      </div>
+      <div class="row">
+        <a href="#" class="zoom-in">
+          <img src="./images/images_01/fa578587-d1b3-49bc-a7f7-6400d5fd0be6_rw_1200Dp3.jpg" alt="Avatar"
+            class="card-img-top">
+          <!-- <div class="fakeimg">Image</div> -->
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="jumbotron text-center" style="margin-bottom:0; padding-right: 200px;">
+    <div class="row">
+      
+        <div class="col-4"></div>
+        <div class="col-8"><h3>You may also like these</H3></div>
+    </div>
+    <div class="row">
+      <div class="col-4 pr-1"></div>
+      <div class="col-4 pr-1 container">
+        <img src="./images/work/W5L.png" alt="Avatar" class="card-img-top">
+        <div class="overlay" >
+          <a class="text" href="gameBannersS01.html"><p>2017</p>Designe of environment, set dressing</a>
+        </div>
+      </div>
+      <div class="col-4 pl-0 container">
+        <img src="./images/work/W5R.png" alt="Avatar" class="card-img-top">
+        <div class="overlay" >
+          <a class="text" href="gameBannersS01.html"><p>2021</p>Project Gates of War (Plarium)</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
