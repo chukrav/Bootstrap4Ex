@@ -13,11 +13,12 @@
       .carousel-inner img {
           width: 100%;
           height: 100%;
-      }
-
-      
+      }     
 
   </style>
+
+  <script src="js/carousele.js"></script>
+
 </head>
 <body>
 
@@ -25,7 +26,7 @@
   <h2>Modal Example</h2>
   <!-- Button to Open the Modal -->
   <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"> -->
-  <button type="button" class="btn btn-primary" onclick="myFunction()">
+  <button type="button" class="btn btn-primary" onclick="toggleCarousel()">
     Open modal
   </button>
   <p></p>
@@ -36,7 +37,7 @@
   <img id="imb-3" src="test_img/ny.jpg" alt="Chicago" width="1100" height="500">
 
 
-  <script>
+  <!-- <script>
     function openNav() {
       // inspectDict();
       console.log("Opening ...");
@@ -52,7 +53,7 @@
     };
     
     
-    </script>
+    </script> -->
 
   <!-- The Modal -->
   <div class="modal" id="myModal" >
@@ -113,35 +114,13 @@
 </div>
 
 <script>
-    const imgs = document.getElementsByTagName("img");
-    
-    const cleanAttributes = () => {
-      for (let img of imgs){
-        if(img.id.includes("imm")){
-          // img.parentElement.removeAttribute("class");
-          img.parentElement.setAttribute("class", "carousel-item");
-        }        
-      }      
-    }
-        
-    
-    const imagePressed = e => {
-      let id = e.target.id;
-      let idm = "imm-" + id.split("-")[1];
-      cleanAttributes();
-      const elt = document.getElementById(idm);
-      elt.parentElement.setAttribute("class", "carousel-item active");
-      
-      console.log(id);
-      myFunction();
-    }
-
+    const imgs = document.getElementsByTagName("img"); 
     for (let img of imgs) {        
-        if(img.id.includes("imb")){
-         img.addEventListener("click", imagePressed);
-        }
-        // img.addEventListener("click", imagePressed);
-    }
+      if(img.id.includes("imb")){
+      img.addEventListener("click", imagePressed);
+      }    
+    }   
+ 
 </script>
 
 </body>

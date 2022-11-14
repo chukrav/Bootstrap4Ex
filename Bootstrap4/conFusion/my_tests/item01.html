@@ -4,16 +4,22 @@
   <title>Game Banners and Splashscreens</title>
   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
   
   <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-  <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <!-- <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
-  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
 
   <link rel="stylesheet" href="css/items_style.css">
+  <script src="js/carousele.js"></script>
+  
    
 </head>
 
@@ -62,73 +68,69 @@
       </ul>
     </div>
     <!--             Second column: Images           -->
-    <div class="column two col-md-9">
+    <div class="column two col-sm-9">
       <h2 style="visibility:hidden;">column #2</h2>
       <div class="row">
         <a href="#" class="zoom-in">
-          <img src="./images/images_01/beed5243-7f6d-4186-a83d-928a5ca7cf31.jpg" alt="Avatar" class="card-img-top">
+          <img id="imb-1" src="./images/images_01/beed5243-7f6d-4186-a83d-928a5ca7cf31.jpg" alt="Avatar" class="card-img-top">
         </a>
       </div>
       <div class="row">
         <a href="#" class="zoom-in">
-          <img src="./images/images_01/a83301d2-e72a-4cee-91cd-1b43ab16d71f.jpg" alt="Avatar" class="card-img-top">
+          <img id="imb-2" src="./images/images_01/a83301d2-e72a-4cee-91cd-1b43ab16d71f.jpg" alt="Avatar" class="card-img-top">
           <!-- <div class="fakeimg">Image</div> -->
         </a>
 
       </div>
       <div class="row">
         <a href="#" class="zoom-in">
-          <img src="./images/images_01/72ce31f9-3e14-43c0-85cd-c491eb5e50f2.png" alt="Avatar" class="card-img-top">
+          <img id="imb-3" src="./images/images_01/72ce31f9-3e14-43c0-85cd-c491eb5e50f2.png" alt="Avatar" class="card-img-top">
           <!-- <div class="fakeimg">Image</div> -->
         </a>
 
       </div>
       <div class="row">
         <a href="#" class="zoom-in">
-          <img src="./images/images_01/4d17ce7a-15cc-4d32-ab33-b7f17e764170Dp.jpg" alt="Avatar" class="card-img-top">
+          <img id="imb-4" src="./images/images_01/4d17ce7a-15cc-4d32-ab33-b7f17e764170Dp.jpg" alt="Avatar" class="card-img-top">
           <!-- <div class="fakeimg">Image</div> -->
         </a>
 
       </div>
       <div class="row">
         <a href="#" class="zoom-in">
-          <img src="./images/images_01/d120ddcc-2fe8-4937-83ee-2f5c476adf40_rw_1200.jpg" alt="Avatar"
-            class="card-img-top">
+          <img id="imb-5" src="./images/images_01/d120ddcc-2fe8-4937-83ee-2f5c476adf40_rw_1200.jpg" alt="Avatar" class="card-img-top">
+          <!-- <div class="fakeimg">Image</div> -->
+        </a>
+      </div>
+      <div class="row">
+        <a href="#" class="zoom-in">
+          <img id="imb-6" src="./images/images_01/3eb801f2-8b8f-488b-aecc-8c8dea336ca1.jpg" alt="Avatar" class="card-img-top">
           <!-- <div class="fakeimg">Image</div> -->
         </a>
 
       </div>
       <div class="row">
         <a href="#" class="zoom-in">
-          <img src="./images/images_01/3eb801f2-8b8f-488b-aecc-8c8dea336ca1.jpg" alt="Avatar" class="card-img-top">
-          <!-- <div class="fakeimg">Image</div> -->
-        </a>
-
-      </div>
-      <div class="row">
-        <a href="#" class="zoom-in">
-          <img src="./images/images_01/705d8c6b-f7a7-4294-bf8b-766e76775c02_rw_1920.jpg" alt="Avatar"
-            class="card-img-top">
+          <img id="imb-7" src="./images/images_01/705d8c6b-f7a7-4294-bf8b-766e76775c02_rw_1920.jpg" alt="Avatar" class="card-img-top">
           <!-- <div class="fakeimg">Image</div> -->
         </a>
       </div>
 
       <div class="row">
         <a href="#" class="zoom-in">
-          <img src="./images/images_01/cc9d5f45-f18e-42b6-88c3-2cb9c417a65aDp2.jpg" alt="Avatar" class="card-img-top">
+          <img id="imb-8" src="./images/images_01/cc9d5f45-f18e-42b6-88c3-2cb9c417a65aDp2.jpg" alt="Avatar" class="card-img-top">
           <!-- <div class="fakeimg">Image</div> -->
         </a>
       </div>
       <div class="row">
         <a href="#" class="zoom-in">
-          <img src="./images/images_01/e289a583-7932-4d7d-8ea5-86d7c81aa15f.jpg" alt="Avatar" class="card-img-top">
+          <img id="imb-9" src="./images/images_01/e289a583-7932-4d7d-8ea5-86d7c81aa15f.jpg" alt="Avatar" class="card-img-top">
           <!-- <div class="fakeimg">Image</div> -->
         </a>
       </div>
       <div class="row">
         <a href="#" class="zoom-in">
-          <img src="./images/images_01/fa578587-d1b3-49bc-a7f7-6400d5fd0be6_rw_1200Dp3.jpg" alt="Avatar"
-            class="card-img-top">
+          <img id="imb-10" src="./images/images_01/fa578587-d1b3-49bc-a7f7-6400d5fd0be6_rw_1200Dp3.jpg" alt="Avatar" class="card-img-top">
           <!-- <div class="fakeimg">Image</div> -->
         </a>
       </div>
@@ -158,6 +160,91 @@
       </div>
     </div>
   </div>
+<!--    ****************   Modal Carousel   *******************   -->
+  <div class="modal" id="myModal" >
+    <div class="modal-dialog modal-dialog-centered mw-100 w-75">
+      <div class="modal-content">    
+               
+        <!-- Modal body -->
+        <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                  <li data-target="#demo" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo" data-slide-to="1"></li>
+                  <li data-target="#demo" data-slide-to="2"></li>
+                  <li data-target="#demo" data-slide-to="3"></li>
+                  <li data-target="#demo" data-slide-to="4"></li>
+                  <li data-target="#demo" data-slide-to="5"></li>
+                  <li data-target="#demo" data-slide-to="6"></li>
+                  <li data-target="#demo" data-slide-to="7"></li>
+                  <li data-target="#demo" data-slide-to="8"></li>
+                  <li data-target="#demo" data-slide-to="9"></li>
+                </ul>
+                
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item">
+                    <img id="imm-1" src="./images/images_01/beed5243-7f6d-4186-a83d-928a5ca7cf31.jpg" alt="Avatar" class="card-img-top">
+                  </div>
+                  <div class="carousel-item active">
+                    <img id="imm-2" src="./images/images_01/a83301d2-e72a-4cee-91cd-1b43ab16d71f.jpg" alt="Avatar" class="card-img-top">
+                  </div>
+                  <div class="carousel-item">
+                    <img id="imm-3" src="./images/images_01/72ce31f9-3e14-43c0-85cd-c491eb5e50f2.png" alt="Avatar" class="card-img-top">
+                  </div>
+                  <div class="carousel-item">
+                    <img id="imm-4" src="./images/images_01/4d17ce7a-15cc-4d32-ab33-b7f17e764170Dp.jpg" alt="Avatar" class="card-img-top">
+                  </div>
+                  <div class="carousel-item">
+                    <img id="imm-5" src="./images/images_01/d120ddcc-2fe8-4937-83ee-2f5c476adf40_rw_1200.jpg" alt="Avatar" class="card-img-top">
+                  </div>
+                  <div class="carousel-item">
+                    <img id="imm-6" src="./images/images_01/3eb801f2-8b8f-488b-aecc-8c8dea336ca1.jpg" alt="Avatar" class="card-img-top">
+                  </div>
+                  <div class="carousel-item">
+                    <img id="imm-7" src="./images/images_01/705d8c6b-f7a7-4294-bf8b-766e76775c02_rw_1920.jpg" alt="Avatar" class="card-img-top">
+                  </div>
+                  <div class="carousel-item">
+                    <img id="imm-8" src="./images/images_01/cc9d5f45-f18e-42b6-88c3-2cb9c417a65aDp2.jpg" alt="Avatar" class="card-img-top">
+                  </div>
+                  <div class="carousel-item">
+                    <img id="imm-9" src="./images/images_01/e289a583-7932-4d7d-8ea5-86d7c81aa15f.jpg" alt="Avatar" class="card-img-top">
+                  </div>
+                  <div class="carousel-item">
+                    <img id="imm-10" src="./images/images_01/fa578587-d1b3-49bc-a7f7-6400d5fd0be6_rw_1200Dp3.jpg" alt="Avatar" class="card-img-top">
+                  </div>
+                  
+                </div>
+                
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+              </div>            
+        </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const imgs = document.getElementsByTagName("img"); 
+    for (let img of imgs) {        
+      if(img.id.includes("imb")){
+      img.addEventListener("click", imagePressed);
+      }    
+    }   
+ 
+</script>
+
 </body>
 
 </html>
