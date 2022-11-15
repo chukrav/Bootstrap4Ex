@@ -19,23 +19,29 @@
   <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
 
     <link rel="stylesheet" href="css/items_style.css">
-    <script src="js/carousele.js"></script>
+    <!-- <script src="js/carousele.js"></script> -->
 
     <style>
         .card-img-top {
-            width: 100vm;
-            height: 18vw;
+            width: 100%;
+            height: 400px;
             object-fit: cover;
         }
 
-        .card-img-top img {
+        /* .card-img-top img {
             width: 100%;
-        }
+        } */
 
         .two {
             background-color: rgb(244, 200, 200);
             height: 2000px;
         }
+
+        a {
+            max-width: 100%;
+            height: max-content;
+        }
+
     </style>
 
 </head>
@@ -59,11 +65,11 @@
 
         </div>
         <!-- <div class="column two col-sm-9"> -->
-        <div class="col-md-9 two pr-0">
+        <div class="col-md-9 two">
             <div class="row">
                 <a href="#" class="zoom-in">
                     <img id="imb-1" src="./images/images_01/beed5243-7f6d-4186-a83d-928a5ca7cf31.jpg" alt="Avatar"
-                        class="img-fluid w-100">
+                        class="card-img-top">
                 </a>
             </div>
             <div class="row">
@@ -72,11 +78,32 @@
                         class="card-img-top">
                 </a>
             </div>
+            <div class="row">
+                <a href="#" class="zoom-in"></a>
+                <img id="imb-3" src="./images/images_01/a83301d2-e72a-4cee-91cd-1b43ab16d71f.jpg" alt="gameBannersS01.html"
+                class="card-img-top">
+                    
+            </div>
 
         </div>
 
 
     </div>
+
+    <script>
+        const imagePressed = (e) => {
+            console.log(e.target.id + " " + e.target.alt);
+            // Simulate a mouse click:  "http://www.w3schools.com"
+            // window.location.href = e.target.alt;
+        }
+
+        const imgs = document.getElementsByTagName("img");
+        for (let img of imgs) {
+            //   if(img.id.includes("imb")){
+            img.addEventListener("click", imagePressed);
+            //   }    
+        }
+    </script>
 
 </body>
 
