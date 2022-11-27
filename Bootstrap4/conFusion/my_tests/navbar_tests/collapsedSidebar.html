@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Collapeses with 770px screen */
+.fakeimg {
+    height: 300px;
+    background-color: rgb(189, 242, 178);
+    margin: 5px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  margin-left: 250px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<div id="main">
+    <div style="width: 100%;  background-color: #111;">
+    <!-- <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button> -->
+    <button class="openbtn" onclick="openNav()">☰ </button>
+    <div class="openbtn" style="float: right;" >Natasha Kravchuk</div>
+    </div>
+    <h2>Collapsed Sidebar</h2>
+    <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut condimentum arcu, in rutrum odio. Donec iaculis
+        facilisis risus tincidunt euismod. Nam laoreet molestie eros, quis lacinia eros bibendum viverra. Phasellus
+        pulvinar ultricies tincidunt. Vivamus fringilla, justo ut convallis vehicula, mauris ipsum tincidunt nibh, eget
+        feugiat purus mi et velit. Donec auctor tellus quis erat placerat, id rutrum ligula viverra. Mauris mattis
+        viverra odio non ornare. Proin odio nisl, maximus vitae enim dignissim, ullamcorper lacinia ligula. Suspendisse
+        ut mauris ante. Integer vel purus vel arcu elementum consectetur et eget nisi. Donec porttitor enim quis
+        interdum lobortis. In lorem nisl, rhoncus ut erat eget, finibus gravida odio. Pellentesque ultricies neque eget
+        massa cursus egestas. In viverra non odio vitae consectetur. Praesent ultrices turpis nec sem tempor semper.
+        Aenean facilisis, lacus nec viverra finibus, purus dolor facilisis sapien, eget porta tellus dolor in lorem.
+    </p><p>
+        Suspendisse quis massa in turpis tempus pretium. Fusce lacinia tristique tortor, vitae pulvinar ligula tristique
+        ut. Etiam pretium magna vitae mi elementum tincidunt. Nulla malesuada quam vitae urna consequat aliquam. Duis
+        vel sapien nisl. Morbi ornare lectus id orci rutrum vestibulum. Nullam fermentum mi in nunc fringilla sodales.
+        Praesent quis quam purus. Etiam sed mauris ac sem condimentum dignissim at in eros. Phasellus sed libero nec
+        tellus suscipit ullamcorper. In convallis urna mollis, ultrices massa nec, ultricies leo. Curabitur condimentum
+        tempus vehicula. Sed iaculis, nulla quis sagittis placerat, leo neque luctus augue, non faucibus dui nunc eget
+        nunc.
+    </p><p>
+        Maecenas sagittis posuere neque, tempor aliquet tellus pretium a. Sed volutpat ex sit amet accumsan hendrerit.
+        Quisque metus quam, ultrices quis bibendum in, mollis quis ligula. Duis quis quam pretium, iaculis nibh eu,
+        lacinia enim. Nulla faucibus laoreet nisi aliquet porttitor. Nulla facilisi. Curabitur et orci posuere, rutrum
+        libero ut, sollicitudin est. Integer congue sapien tristique dictum volutpat. Suspendisse tempor felis vel risus
+        laoreet, at elementum ipsum consectetur. Maecenas iaculis mattis lacinia.
+    </p><p>
+        Vestibulum nec velit dolor. Suspendisse potenti. Mauris interdum non arcu id mollis. Cras vel libero ut risus
+        lacinia dignissim. Praesent interdum, massa in commodo interdum, massa ligula tincidunt elit, nec interdum velit
+        justo non lacus. Praesent quis maximus nisi, non ornare lectus. Praesent vel risus rutrum, eleifend nunc id,
+        tincidunt metus. Vestibulum bibendum rhoncus ligula, eget accumsan lectus hendrerit et. Phasellus et porttitor
+        eros, ac venenatis lacus. Aenean nec placerat orci. Curabitur placerat neque vel malesuada egestas. Nam congue
+        neque odio, iaculis pharetra arcu pharetra non. Nullam erat felis, iaculis non imperdiet ut, bibendum nec magna.
+    </p><p>
+        Aliquam in diam ultrices, luctus mi at, sagittis urna. Aliquam id quam lacinia, accumsan felis ac, fringilla
+        elit. Donec ut ultrices sem. Quisque laoreet tortor non gravida gravida. Praesent imperdiet, diam aliquam
+        rhoncus imperdiet, elit dui ultrices nulla, at consequat sem leo at orci. Fusce volutpat metus a dolor egestas
+        sodales. Donec congue lectus in nulla fringilla venenatis. Donec et lacus nibh. Cras quis sagittis diam.
+    </p>
+    <div class="fakeimg">Image-1</div>
+    <div class="fakeimg">Image-2</div>
+    <div class="fakeimg">Image-3</div>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+//   document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+</body>
+</html> 

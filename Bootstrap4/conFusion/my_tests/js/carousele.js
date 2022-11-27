@@ -21,12 +21,12 @@ const imagePressed = e => {
   toggleCarousel();
 }
 
-for (let img of imgs) {        
-    if(img.id.includes("imb")){
-     img.addEventListener("click", imagePressed);
-    }
-    // img.addEventListener("click", imagePressed);
-}
+// for (let img of imgs) {        
+//     if(img.id.includes("imb")){
+//      img.addEventListener("click", imagePressed);
+//     }
+//     // img.addEventListener("click", imagePressed);
+// }
 
 
 function toggleCarousel(){
