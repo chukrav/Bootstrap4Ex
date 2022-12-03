@@ -1,0 +1,25 @@
+body {
+    height: 100vh;
+    overflow-x: hidden;
+    padding-top: 56px;
+}
+
+.vh-100 {
+    min-height: 100vh;
+}
+
+.sidebar.collapse.show,
+.sidebar.collapse.show + .col {
+    transition: .18s ease;
+    transform: translate(0,0,0);
+    left: 0;
+}
+
+.sidebar.collapse,
+.sidebar.collapsing,
+.sidebar.collapsing + .col {
+    transition: .18s ease;
+    transform: translate(-25%,0,0);
+    z-index: 1050;
+    left: -25%;
+}

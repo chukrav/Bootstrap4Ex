@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Collapeses with 770px screen */
+.fakeimg {
+    height: 300px;
+    background-color: rgb(189, 242, 178);
+    margin: 5px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 450px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-y: scroll;  
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  visibility: hidden;
+  /* display: none; */
+}
+
+.openbtn {
+  /* position: fixed;
+  top: 0; */
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  /* visibility: hidden; */
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#openBn {
+  visibility: hidden;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  margin-left: 450px;
+}
+
+/* #mnavB {
+  position: fixed;
+  top: 0;
+} */
+
+div.relative {
+  position: fixed;
+  right: 0;
+  width:100%;  
+  height: min-content;
+  padding: 16px;
+  margin-left: 450px;
+  background-color: rgb(137, 139, 139);
+  border: 3px solid #73AD21;
+} 
+
+div.absolute {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  padding: 16px;
+  /* width: auto; */
+  /* height: 30px; */
+  /* float: right; */
+  border: 3px solid #73AD21;
+  color: white;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #111;
+  opacity: 0.3;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+  opacity: 1.0;
+}
+
+.zoom-in {
+    cursor: zoom-in;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #141d3b;
+}
+
+.container:hover .overlay {
+    opacity: 0.85;
+}
+
+.text {
+    color: white;
+    font-size: 28px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+p {
+    font-size: 22px;
+    font-style: italic;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-width: 600px) {
+  .sidebar {padding-top: 15px; width: 0px;}
+  .sidebar a {font-size: 18px;}
+  .sidebar .closebtn {visibility: visible;}
+  #openBn {visibility: visible;}
+  #main {margin-left: 0px;}
+}
+</style>
+</head>
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">&#8593</button>
+
+<div id="mySidebar" class="sidebar">
+  <!-- <h2 style="color: white;padding: 8px 8px 8px 32px;">Natalia Kravtchouk</h2> -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index_nataly.html">Work</a>
+  <a href="item02.html">Game Backgrounds (Adobe Photoshop)</a>
+  <a href="item03.html">Game Items Concept art</a>
+  <a href="item04.html">App icons designe</a>
+  <a href="item05.html">Game Icons designe</a>
+  <a href="item06.html">Solitaire Game Art</a>
+  <a href="item07.html">Characters design</a>
+  <a href="item08.html">Items for mobile games</a>
+  <a href="item09.html">Designe of environment, set dressing</a>
+  <a href="item10.html">Illustrations, storyboards</a>
+  <a href="item11.html">Art for Commercials</a>
+  <a href="item12.html">Personal Art Projects (Scetches, watercolor paintings)</a>
+  <a href="item13.html">Farm game (concept art)</a>
+  <a href="item14.html">Contact</a>
+</div>
+
+
+
+<div id="main">
+    <div id="mnavB" style="width: 100%;  background-color: #111;">
+    <!-- <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button> -->
+    <button id="openBn" class="openbtn" onclick="openNav()">☰ &#8593</button>
+    <div class="openbtn" style="float: right;" >Natalia Kravtchouk</div>
+    </div>   
+    
+
+    <h1>Game Banners and Splashscreens</h1>
+    <!--             Second column: Images           -->
+    <div>
+      <img id="imb-1" src="../images/images_01/beed5243-7f6d-4186-a83d-928a5ca7cf31.jpg" alt="Avatar"
+        class="card-img-top zoom-in">
+    </div>
+    <div>
+      <img id="imb-2" src="../images/images_01/a83301d2-e72a-4cee-91cd-1b43ab16d71f.jpg" alt="Avatar"
+        class="card-img-top zoom-in">
+    </div>
+
+
+    <div>
+      <img id="imb-3" src="../images/images_01/72ce31f9-3e14-43c0-85cd-c491eb5e50f2.png" alt="Avatar"
+        class="card-img-top zoom-in">
+    </div>
+    <div>
+      <img id="imb-4" src="../images/images_01/4d17ce7a-15cc-4d32-ab33-b7f17e764170Dp.jpg" alt="Avatar"
+        class="card-img-top zoom-in">
+    </div>
+    <div>
+      <img id="imb-5" src="../images/images_01/d120ddcc-2fe8-4937-83ee-2f5c476adf40_rw_1200.jpg" alt="Avatar"
+        class="card-img-top zoom-in">
+    </div>
+    <div>
+      <img id="imb-6" src="../images/images_01/3eb801f2-8b8f-488b-aecc-8c8dea336ca1.jpg" alt="Avatar"
+        class="card-img-top zoom-in">
+    </div>
+    <div>
+      <img id="imb-7" src="../images/images_01/705d8c6b-f7a7-4294-bf8b-766e76775c02_rw_1920.jpg" alt="Avatar"
+        class="card-img-top zoom-in">
+    </div>
+    <div>
+      <img id="imb-8" src="../images/images_01/cc9d5f45-f18e-42b6-88c3-2cb9c417a65aDp2.jpg" alt="Avatar"
+        class="card-img-top zoom-in">
+    </div>
+    <div>
+      <img id="imb-9" src="../images/images_01/e289a583-7932-4d7d-8ea5-86d7c81aa15f.jpg" alt="Avatar"
+        class="card-img-top zoom-in">
+    </div>
+    <div>
+      <img id="imb-10" src="../images/images_01/fa578587-d1b3-49bc-a7f7-6400d5fd0be6_rw_1200Dp3.jpg" alt="Avatar"
+        class="card-img-top zoom-in">
+    </div>
+    <!--           Futter              -->
+    <div>
+      <h3>You may also like these</H3>
+        <div class="container" style="float: left;">
+          <img src="../images/work/W5L.png" alt="Avatar" class="card-img-top">
+          <div class="overlay" >
+            <a class="text" href="gameBannersS01.html"><p>2017</p>Designe of environment, set dressing</a>
+          </div>
+        </div>
+        <div style="float: left;">
+          <img src="../images/work/W5R.png" alt="Avatar" class="card-img-top">
+          <div class="overlay" >
+            <a class="text" href="gameBannersS01.html"><p>2021</p>Project Gates of War (Plarium)</a>
+          </div>
+        </div>
+
+
+    </div>
+    
+
+<script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    //   document.getElementById("main").style.marginLeft = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+  }
+
+
+  // Get the button
+  let mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction()
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+   
+</body>
+</html> 
