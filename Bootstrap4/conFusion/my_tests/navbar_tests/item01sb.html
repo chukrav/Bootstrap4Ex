@@ -4,12 +4,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 /* Collapeses with 770px screen */
-.fakeimg {
-    height: 300px;
-    background-color: rgb(189, 242, 178);
-    margin: 5px;
-}
-
 body {
   font-family: "Lato", sans-serif;
 }
@@ -149,13 +143,18 @@ div.absolute {
     background-color: #141d3b;
 }
 
+.container {
+  position: relative;
+  width: 50%;
+}
+
 .container:hover .overlay {
     opacity: 0.85;
 }
 
 .text {
     color: white;
-    font-size: 28px;
+    font-size: 22px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -166,17 +165,19 @@ div.absolute {
 }
 
 p {
-    font-size: 22px;
+    font-size: 16px;
     font-style: italic;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .sidebar {padding-top: 15px; width: 0px;}
   .sidebar a {font-size: 18px;}
   .sidebar .closebtn {visibility: visible;}
   #openBn {visibility: visible;}
   #main {margin-left: 0px;}
+  .text{font-size: 18px;}
+  p {font-size: 14px;}
 }
 </style>
 </head>
@@ -258,20 +259,27 @@ p {
         class="card-img-top zoom-in">
     </div>
     <!--           Futter              -->
-    <div>
-      <h3>You may also like these</H3>
-        <div class="container" style="float: left;">
-          <img src="../images/work/W5L.png" alt="Avatar" class="card-img-top">
-          <div class="overlay" >
-            <a class="text" href="gameBannersS01.html"><p>2017</p>Designe of environment, set dressing</a>
-          </div>
+    <div style="margin-bottom: 200px;">
+      <h3 style="text-align: center;">You may also like these</H3>
+
+      <div class="container" style="width: 50%; float: left;">
+        <img src="../images/work/W5L.png" alt="Avatar" class="card-img-top">
+        <div class="overlay">
+          <a class="text" href="gameBannersS01.html">
+            <p>2017</p>Designe of environment, set dressing
+          </a>
         </div>
-        <div style="float: left;">
-          <img src="../images/work/W5R.png" alt="Avatar" class="card-img-top">
-          <div class="overlay" >
-            <a class="text" href="gameBannersS01.html"><p>2021</p>Project Gates of War (Plarium)</a>
-          </div>
+
+      </div>
+      <div class="container" style="width: 50%; float: right;">
+        <img src="../images/work/W5R.png" alt="Avatar" class="card-img-top">
+        <div class="overlay">
+          <a class="text" href="gameBannersS01.html">
+            <p>2021</p>Project Gates of War (Plarium)
+          </a>
         </div>
+      </div>
+      <!-- <div class="fakeimg" ></div> -->
 
 
     </div>
