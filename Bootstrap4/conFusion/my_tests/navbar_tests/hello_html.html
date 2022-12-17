@@ -22,7 +22,7 @@
     </div>
 
 <script>
-    const values = { main: ["../images/images_01/beed5243-7f6d-4186-a83d-928a5ca7cf31.jpg",
+    const values = { images: ["../images/images_01/beed5243-7f6d-4186-a83d-928a5ca7cf31.jpg",
 	"../images/images_01/a83301d2-e72a-4cee-91cd-1b43ab16d71f.jpg",
 	"../images/images_01/72ce31f9-3e14-43c0-85cd-c491eb5e50f2.jpg",
 	"../images/images_01/4d17ce7a-15cc-4d32-ab33-b7f17e764170Dp.jpg",
@@ -35,8 +35,8 @@
 	footer: [{src: "../images/work/W5L.png", href: "gameBannersS01.html"},
 			 {src: "../images/work/W5R.png", href: "gameBannersS01.html"}]};
 
-    console.log(values.main[0]);
-    console.log(values.main.length);
+    console.log(values.images[0]);
+    console.log(values.images.length);
     console.log(values.footer[0].src);
     console.log(values.footer[0].href);
 
@@ -46,7 +46,7 @@
     console.log("Found images: " + imgs.length);
 
     for (let img of imgs) {     
-        img.setAttribute("src", values.main[i].toString());
+        img.setAttribute("src", values.images[i].toString());
         i = i+1;
         console.log("img atr set");
     }   
