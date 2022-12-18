@@ -137,8 +137,8 @@
       <div class="container" style="width: 50%; float: left;">
         <img id="imf-1" src="../images/work/W5L.png" alt="Avatar" class="card-img-top">
         <div class="overlay">
-          <a class="text" href="gameBannersS01.html">
-            <p>2017</p>Designe of environment, set dressing
+          <a id="left-ban" class="text" href="gameBannersS01.html">
+            <span id="overlay-txt-left"><p>2017</p>Designe of environment, set dressing</span>
           </a>
         </div>
 
@@ -146,8 +146,8 @@
       <div class="container" style="width: 50%; float: right;">
         <img id="imf-2" src="../images/work/W5R.png" alt="Avatar" class="card-img-top">
         <div class="overlay">
-          <a class="text" href="gameBannersS01.html">
-            <p>2021</p>Project Gates of War (Plarium)
+          <a id="right-ban" class="text" href="gameBannersS01.html">
+            <span id="overlay-txt-right"><p>2021</p>Project Gates of War (Plarium)</span>
           </a>
         </div>
       </div>
@@ -167,7 +167,7 @@
     </div>
 
     <div class="modal" id="myModal" >
-      <div class="modal-dialog modal-dialog-centered mw-100 w-75">
+      <div class="modal-dialog modal-dialog-centered mw-100 w-100">
         <div class="modal-content">    
                  
           <!-- Modal body -->
@@ -252,8 +252,10 @@
 	"../images/images_01/cc9d5f45-f18e-42b6-88c3-2cb9c417a65aDp2.jpg",
 	"../images/images_01/e289a583-7932-4d7d-8ea5-86d7c81aa15f.jpg",
 	"../images/images_01/fa578587-d1b3-49bc-a7f7-6400d5fd0be6_rw_1200Dp3.jpg"],
-	footer: [{src: "../images/work/W5L.png", href: "gameBannersS01.html"},
-			 {src: "../images/work/W5R.png", href: "gameBannersS01.html"}]};
+	banners: [{src: "../images/work/W5L.png", href: "gameBannersS01.html",
+            text: "<p>2017</p>Designe of environment, set dressing"},
+			 {src: "../images/work/W5R.png", href: "gameBannersS01.html",
+            text: "<p>2021</p>Project Gates of War (Plarium)"}]};
 
   const imgs = document.getElementsByTagName("img");
   console.log("imgs count: "+ imgs.length) 
@@ -276,7 +278,8 @@
         img.setAttribute("src", values.images[i]);
         i = i+1;
       }
-    }   
+    } 
+    // document.getElementById("imf-1").setAttribute("src", values.banners[i].src);  
 
   function openNav() {
     document.getElementById("mySidebar").style.width = "250px";
