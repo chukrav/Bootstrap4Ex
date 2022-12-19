@@ -205,3 +205,8 @@ p {
 a:hover {
     text-decoration: none;  
 }
+
+.nav-pills .nav-link.active {
+  background-color: rgba(121, 218, 248, 0.2);
+  color: white;
+  }

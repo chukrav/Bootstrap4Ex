@@ -35,7 +35,7 @@
       <a class="nav-link" href="item02.html">Game Backgrounds (Adobe Photoshop)</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link disabled" href="item03.html">Game Items Concept art</a>
+      <a class="nav-link" href="item03.html">Game Items Concept art</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="item04.html">App icons designe</a>
@@ -135,19 +135,19 @@
       <h3 style="text-align: center;">You may also like these</H3>
 
       <div class="container" style="width: 50%; float: left;">
-        <img id="imf-1" src="../images/work/W5L.png" alt="Avatar" class="card-img-top">
+        <img id="imf-1" src="banner-img01" alt="Avatar" class="card-img-top">
         <div class="overlay">
           <a id="left-ban" class="text" href="gameBannersS01.html">
-            <span id="overlay-txt-left"><p>2017</p>Designe of environment, set dressing</span>
+            <span id="overlay-txt-left">text-1</span>
           </a>
         </div>
 
       </div>
       <div class="container" style="width: 50%; float: right;">
-        <img id="imf-2" src="../images/work/W5R.png" alt="Avatar" class="card-img-top">
+        <img id="imf-2" src="banner-img02" alt="Avatar" class="card-img-top">
         <div class="overlay">
           <a id="right-ban" class="text" href="gameBannersS01.html">
-            <span id="overlay-txt-right"><p>2021</p>Project Gates of War (Plarium)</span>
+            <span id="overlay-txt-right">text-2</span>
           </a>
         </div>
       </div>
@@ -244,7 +244,7 @@
 <script>
   const values = { images: ["../images/images_01/beed5243-7f6d-4186-a83d-928a5ca7cf31.jpg",
 	"../images/images_01/a83301d2-e72a-4cee-91cd-1b43ab16d71f.jpg",
-	"../images/images_01/72ce31f9-3e14-43c0-85cd-c491eb5e50f2.png",
+	"../images/images_01/72ce31f9-3e14-43c0-85cd-c491eb5e50f2.jpg",  
 	"../images/images_01/4d17ce7a-15cc-4d32-ab33-b7f17e764170Dp.jpg",
 	"../images/images_01/d120ddcc-2fe8-4937-83ee-2f5c476adf40_rw_1200.jpg",
 	"../images/images_01/3eb801f2-8b8f-488b-aecc-8c8dea336ca1.jpg",
@@ -258,28 +258,13 @@
             text: "<p>2021</p>Project Gates of War (Plarium)"}]};
 
   const imgs = document.getElementsByTagName("img");
-  console.log("imgs count: "+ imgs.length) 
-  let i = 0;
-  let icorrect = true;
-    for (let img of imgs) {  
-      console.log(img.id);      
-      if(img.id.includes("imb")){
-      img.addEventListener("click", imagePressed);
-      img.setAttribute("src", values.images[i]);
-        i = i+1;
-      } 
-      
-      if(img.id.includes("imm")){
-        if(i > 0 & icorrect === true) {
-          i = 0;
-          icorrect = false;
-          console.log("------ i = 0 -------- ");
-        }
-        img.setAttribute("src", values.images[i]);
-        i = i+1;
-      }
-    } 
-    // document.getElementById("imf-1").setAttribute("src", values.banners[i].src);  
+  
+    setImages(document, values);
+    setBanners(document, values);    
+
+    console.log("Count of the img-s: "+(imgs.length-2)/2);
+    console.log("Count of the img-s JSON: "+values.images.length);
+    
 
   function openNav() {
     document.getElementById("mySidebar").style.width = "250px";
