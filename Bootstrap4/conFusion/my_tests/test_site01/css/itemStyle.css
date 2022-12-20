@@ -1,12 +1,61 @@
-.fakeimg {
-    height: 50px;
-    background-color: white;
-    margin: 5px;
+html,
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
 }
 
-body {
-  font-family: "Lato", sans-serif;
+.row {
+  display: flex;
 }
+
+.column {
+  flex: 50%;
+  padding: 16px;
+}
+
+.nav-pills {
+font-size: 16pt;
+}
+
+/* not active */
+.nav-pills .nav-link:not(.active) {
+background-color: rgba(27, 26, 26, 0.5);
+color: rgb(245, 240, 240);
+}
+
+.container50 {
+  position: relative;
+  width: 50%;
+}
+
+.container50:hover .overlay {
+    opacity: 0.85;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+}
+
+.container:hover .overlay {
+  opacity: 0.85;
+}
+  
+
+/* active (faded) */
+/* .nav-pills .nav-link.active {
+background-color: rgba(27, 26, 26, 0.2);
+color: rgb(12, 12, 12);
+} */
+
+.nav-pills .nav-link.active {
+  background-color: rgba(121, 218, 248, 0.2);
+  color: white;
+}
+
+/* body {
+  font-family: "Lato", sans-serif;
+} */
 
 .sidebar {
   height: 100%;
@@ -151,15 +200,6 @@ div.absolute {
   color: white;
 }
 
-.container {
-  position: relative;
-  width: 50%;
-}
-
-.container:hover .overlay {
-    opacity: 0.85;
-}
-
 .text {
     color: white;
     font-size: 2vw;
@@ -176,6 +216,8 @@ p {
     font-size: 1.2vw;
     font-style: italic;
 }
+
+
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-width: 900px) {
@@ -202,11 +244,8 @@ p {
     opacity: 0.7;
 }
 
-a:hover {
-    text-decoration: none;  
+a:link,a:hover {
+  text-decoration: none;
+  /* color: white; */
 }
 
-.nav-pills .nav-link.active {
-  background-color: rgba(121, 218, 248, 0.2);
-  color: white;
-  }

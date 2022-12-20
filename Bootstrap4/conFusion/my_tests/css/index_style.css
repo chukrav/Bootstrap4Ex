@@ -7,17 +7,6 @@
     padding: 16px;
 }
 
-.one {
-    background-color: white;
-    position: sticky;
-    top: 0;
-    height: min-content;
-}
-
-.two {
-    background-color: white;
-    height: min-content;
-}
 
 html,
 body {
@@ -66,7 +55,7 @@ opacity: 0.85;
 
 .text {
 color: white;
-font-size: 28px;
+font-size: 2vw;
 position: absolute;
 top: 50%;
 left: 50%;
@@ -78,10 +67,11 @@ text-align: center;
 
 a:link, a:hover {
 text-decoration: none;
-color: white;
+/* color: white; */
 }
 
 p {
-font-size:  22px;
+/* font-size:  22px; */
+font-size: 1.2vw;
 font-style: italic;
 }
