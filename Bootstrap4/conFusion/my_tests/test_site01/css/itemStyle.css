@@ -57,6 +57,10 @@ color: rgb(12, 12, 12);
   font-family: "Lato", sans-serif;
 } */
 
+:root {
+  --dark-gray: #111;
+}
+
 .sidebar {
   height: 100%;
   width: 450px;
@@ -64,7 +68,8 @@ color: rgb(12, 12, 12);
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  /* background-color: #111; */
+  background-color: var(--dark-gray);
   overflow-y: scroll;  
   transition: 0.5s;
   padding-top: 60px;
@@ -101,7 +106,8 @@ color: rgb(12, 12, 12);
   /* font-size: 20px; */
   font-size: 4vw;
   cursor: pointer;
-  background-color: #111;
+  /* background-color: #111; */
+  background-color: var(--dark-gray);
   color: white;
   padding: 10px 15px;
   border: none;
@@ -159,7 +165,8 @@ div.absolute {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #111;
+  /* background-color: #111; */
+  background-color: var(--dark-gray);
   opacity: 0.3;
   color: white;
   cursor: pointer;
