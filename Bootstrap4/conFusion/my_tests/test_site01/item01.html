@@ -242,7 +242,7 @@
     
 
 <script>
-  const values = { images: ["../images/images_01/beed5243-7f6d-4186-a83d-928a5ca7cf31.jpg",
+  const img_ref = { images: ["../images/images_01/beed5243-7f6d-4186-a83d-928a5ca7cf31.jpg",
 	"../images/images_01/a83301d2-e72a-4cee-91cd-1b43ab16d71f.jpg",
 	"../images/images_01/72ce31f9-3e14-43c0-85cd-c491eb5e50f2.jpg",  
 	"../images/images_01/4d17ce7a-15cc-4d32-ab33-b7f17e764170Dp.jpg",
@@ -259,11 +259,11 @@
 
   const imgs = document.getElementsByTagName("img");
   
-    setImages(document, values);
-    setBanners(document, values);    
+    setImages(document, img_ref);
+    setBanners(document, img_ref);    
 
     console.log("Count of the img-s: "+(imgs.length-2)/2);
-    console.log("Count of the img-s JSON: "+values.images.length);
+    console.log("Count of the img-s JSON: "+img_ref.images.length);
     
 
   function openNav() {
