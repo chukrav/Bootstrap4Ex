@@ -39,3 +39,25 @@ const values = [{href: "index.html", text: "<p></p>Work", src: ""},
     console.log("Values length: "+values.length);
   }
 
+  // <div class="row">
+  //     <div class="col pr-1 container">
+  //       <img src="img_link" alt="Avatar" class="card-img-top">
+  //       <div class="overlay">
+  //         <a class="text" href="item_html">
+  //           <span> title_text</span>
+  //         </a>
+  //       </div>
+  //     </div>
+  //     <div class="col pl-0 container">
+  //       <img src="img_link" alt="Avatar" class="card-img-top">
+  //       <div class="overlay">
+  //         <a class="text" href="item_html">
+  //           <span>title_text</span>
+  //         </a>
+  //       </div>
+  //     </div>
+  //   </div>
+  function setIdxImages(doc){
+
+  }
+
