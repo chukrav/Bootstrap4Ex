@@ -24,15 +24,15 @@
 <div id="mySidebar" class="sidebar">
   <!-- <h2 style="color: white;padding: 8px 8px 8px 32px;">Natalia Kravtchouk</h2> -->
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <ul id="sidebarLinks" class="nav nav-pills flex-column">
+  <ul class="nav nav-pills flex-column">
     <li class="nav-item">
       <a class="nav-link" href="index.html">Work</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link active" href="item01.html">Game Banners and Splashscreens</a>
+      <a class="nav-link" href="item01.html">Game Banners and Splashscreens</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="item02.html">Game Backgrounds (Adobe Photoshop)</a>
+      <a class="nav-link  active" href="item02.html">Game Backgrounds (Adobe Photoshop)</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="item03.html">Game Items Concept art</a>
@@ -87,7 +87,7 @@
     </div>   
     
 
-    <div style="font-size: 3vw; text-align: center;" >Game Banners and Splashscreens</div>
+    <div style="font-size: 3vw; text-align: center;" >Game Backgrounds (Adobe Photoshop)</div>
     <!--             Second column: Images           -->
     <div>
       <img id="imb-1" src="image-1" alt="Avatar"
@@ -132,7 +132,7 @@
         class="card-img-top zoom-in">
     </div>
     <!--           Futter              -->
-    <div style="margin-bottom: 200px;">
+    <div style="margin: 100px 0px;">
       <h3 style="text-align: center;">You may also like these</H3>
 
       <div class="container50" style="width: 50%; float: left;">
@@ -158,7 +158,7 @@
     </div>
     <!-- <div class="fakeimg" ></div> -->
     <div class="jumbotron text-center" style="margin-bottom:0; padding: 100px;">
-      <h2>You can find me on</h2>
+      <h2 style="margin-top: 50px;">You can find me on</h2>
       <a href="#" class="fa fa-facebook"></a>
       <a href="#" class="fa fa-twitter"></a>
       <a href="#" class="fa fa-linkedin"></a>
@@ -240,19 +240,19 @@
         </div>
       </div>
     </div>
-</div>  
+    
 
 <script>
-  const img_ref = { images: ["../images/images_01/beed5243-7f6d-4186-a83d-928a5ca7cf31.jpg",
-	"../images/images_01/a83301d2-e72a-4cee-91cd-1b43ab16d71f.jpg",
-	"../images/images_01/72ce31f9-3e14-43c0-85cd-c491eb5e50f2.png",  
-	"../images/images_01/4d17ce7a-15cc-4d32-ab33-b7f17e764170Dp.jpg",
-	"../images/images_01/d120ddcc-2fe8-4937-83ee-2f5c476adf40_rw_1200.jpg",
-	"../images/images_01/3eb801f2-8b8f-488b-aecc-8c8dea336ca1.jpg",
-	"../images/images_01/705d8c6b-f7a7-4294-bf8b-766e76775c02_rw_1920.jpg",
-	"../images/images_01/cc9d5f45-f18e-42b6-88c3-2cb9c417a65aDp2.jpg",
-	"../images/images_01/e289a583-7932-4d7d-8ea5-86d7c81aa15f.jpg",
-	"../images/images_01/fa578587-d1b3-49bc-a7f7-6400d5fd0be6_rw_1200Dp3.jpg"],
+  const values = { images: ["../images/images_02/11aa8656-029f-49cd-9931-bfac6a72ffb3_rw_1920.jpg",
+	"../images/images_02/4a829c2d-f6df-4fc7-8234-9dce8beaf383.jpg",
+	"../images/images_02/fa5fec2f-8f45-4151-8bdd-bead72ca4d3c.jpg",  
+	"../images/images_02/33294185-f4c4-4a4b-9615-21789ef5ad4c.jpg",
+	"../images/images_02/02f8ba74-e2b3-4ed4-99b8-162e5a05f6dd.jpg",
+	"../images/images_02/4c868969-e6af-4cd8-a026-45f70f9f3f80.jpg",
+	"../images/images_02/6e780eec-a050-4a82-882b-3377c32c96fe2P.jpg",
+	"../images/images_02/91f42030-40a5-4fef-9ade-0651e8dec978@P.jpg",
+	"../images/images_02/f6c5bf13-3977-4ee6-9e3c-e984bc588e722P.jpg",
+	"../images/images_02/ee65a502-9466-4320-b814-8fec4f9fbd012P.jpg"],
 	banners: [{src: "../images/work/W5L.png", href: "gameBannersS01.html",
             text: "<p>2017</p>Designe of environment, set dressing"},
 			 {src: "../images/work/W5R.png", href: "gameBannersS01.html",
@@ -260,11 +260,11 @@
 
   const imgs = document.getElementsByTagName("img");
   
-    setImages(document, img_ref);
-    setBanners(document, img_ref);    
+    setImages(document, values);
+    setBanners(document, values);    
 
     console.log("Count of the img-s: "+(imgs.length-2)/2);
-    console.log("Count of the img-s JSON: "+img_ref.images.length);
+    console.log("Count of the img-s JSON: "+values.images.length);
     
 
   function openNav() {
