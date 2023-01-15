@@ -231,7 +231,7 @@
       <a href="#" class="fa fa-vimeo" style="color: #444;"></a>
     </div>       
           
-          
+</div>          
     
     
 
@@ -253,21 +253,20 @@
   // {href: "item14.html", text: "<p>2011</p>Farm game (concept art)", src: "../images/work/W7R.png"},
   // {href: "item15.html", text: "<p></p>Contact", src: ""}];
 
-  // const values = getValues();
-
+  
   const imgs = document.getElementsByTagName("img");
   const spans = document.getElementsByTagName("span");  
   const navlinks = document.getElementsByClassName("nav-link");
   const texts = document.getElementsByClassName("text");
 
-  console.log(navlinks.length);
-  let i = 0;
-  for (let nav of navlinks) { 
-    let ntext = values[i].text.split("</p>")[1]  ;
-    nav.innerHTML = ntext;
-    nav.setAttribute("href", values[i].href);
-    i = i+1;
-  }
+  // console.log(navlinks.length);
+  // let i = 0;
+  // for (let nav of navlinks) { 
+  //   let ntext = values[i].text.split("</p>")[1]  ;
+  //   nav.innerHTML = ntext;
+  //   nav.setAttribute("href", values[i].href);
+  //   i = i+1;
+  // }
 
   i = 1;
   for (let img of imgs) {       
