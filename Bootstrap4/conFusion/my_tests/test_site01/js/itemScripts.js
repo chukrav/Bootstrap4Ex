@@ -15,10 +15,6 @@ const values = [{href: "index.html", text: "<p></p>Work", src: ""},
   {href: "item14.html", text: "<p>2011</p>Farm game (concept art)", src: "../images/work/W7R.png"},
   {href: "item15.html", text: "<p></p>Contact", src: ""}];
 
-//     <li class="nav-item">
-//       <a class="nav-link active" href="index.html">item_txt</a>
-//     </li>
-
   function setLinks(doc,i) {
     // navLinks
     let liEls = '';
@@ -35,29 +31,42 @@ const values = [{href: "index.html", text: "<p></p>Work", src: ""},
         ii = ii + 1;
     }
     doc.getElementById("navLinks").innerHTML = liEls;
-    console.log(liEls);
-    console.log("Values length: "+values.length);
+    // console.log(liEls);
+    // console.log("Values length: "+values.length);
   }
+  
+  function setIdxImages(doc) {
+    const LEN = values.length-1; // LEN must be even!
+    let idx_images_txt = "";
+    // console.log("Put inner HTML");
 
-  // <div class="row">
-  //     <div class="col pr-1 container">
-  //       <img src="img_link" alt="Avatar" class="card-img-top">
-  //       <div class="overlay">
-  //         <a class="text" href="item_html">
-  //           <span> title_text</span>
-  //         </a>
-  //       </div>
-  //     </div>
-  //     <div class="col pl-0 container">
-  //       <img src="img_link" alt="Avatar" class="card-img-top">
-  //       <div class="overlay">
-  //         <a class="text" href="item_html">
-  //           <span>title_text</span>
-  //         </a>
-  //       </div>
-  //     </div>
-  //   </div>
-  function setIdxImages(doc){
+    for (let i = 1; i < LEN; i+=2) {
+      let src1 = values[i].src;
+      let href1 = values[i].href;
+      let text1 = values[i].text;
+      let src2 = values[(i+1)].src;
+      let href2 = values[(i+1)].href;
+      let text2 = values[(i+1)].text;
 
+      idx_images_txt = idx_images_txt + 
+      '<div class="row">'+
+      '<div class="col pr-1 container">'+
+      `<img src="${src1}" alt="Avatar" class="card-img-top">`+
+      '<div class="overlay">'+
+      `<a class="text" href="${href1}">`+
+      `<span>${text1}</span>`+
+      '</a></div></div>'+
+      '<div class="col pl-0 container">'+
+      `<img src="${src2}" alt="Avatar" class="card-img-top">`+
+      '<div class="overlay">'+
+      `<a class="text" href="${href2}">`+
+      `<span>${text2}</span>`+
+      '</a></div></div></div>'; 
+      // console.log(""+i+", "+(i+1));     
+    }
+
+    doc.getElementById("twoColumnsImgs").innerHTML = idx_images_txt;
+    // console.log(idx_images_txt);
+    
   }
 

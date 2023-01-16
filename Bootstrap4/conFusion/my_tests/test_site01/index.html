@@ -240,12 +240,12 @@
     
 
 <script>
+  setIdxImages(document);
+  // const imgs = document.getElementsByTagName("img");
+  // const spans = document.getElementsByTagName("span");  
+  // const navlinks = document.getElementsByClassName("nav-link");
+  // const texts = document.getElementsByClassName("text");
   
-  const imgs = document.getElementsByTagName("img");
-  const spans = document.getElementsByTagName("span");  
-  const navlinks = document.getElementsByClassName("nav-link");
-  const texts = document.getElementsByClassName("text");
-
   // console.log(navlinks.length);
   // let i = 0;
   // for (let nav of navlinks) { 
@@ -254,24 +254,24 @@
   //   nav.setAttribute("href", values[i].href);
   //   i = i+1;
   // }
+//------------------------------
+  // i = 1;
+  // for (let img of imgs) {       
+  //   img.setAttribute("src", values[i].src);   
+  //   i = i+1;
+  // }
 
-  i = 1;
-  for (let img of imgs) {       
-    img.setAttribute("src", values[i].src);   
-    i = i+1;
-  }
+  // i = 1;
+  // for (let spn of spans) {       
+  //   spn.innerHTML = values[i].text;   
+  //   i = i+1;
+  // }
 
-  i = 1;
-  for (let spn of spans) {       
-    spn.innerHTML = values[i].text;   
-    i = i+1;
-  }
-
-  i = 1;
-  for (let txt of texts) {       
-    txt.setAttribute("href", values[i].href);     
-    i = i+1;
-  }
+  // i = 1;
+  // for (let txt of texts) {       
+  //   txt.setAttribute("href", values[i].href);     
+  //   i = i+1;
+  // }
   
 
   function openNav() {
