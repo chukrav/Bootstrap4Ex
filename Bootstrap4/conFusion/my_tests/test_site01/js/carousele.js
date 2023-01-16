@@ -67,3 +67,25 @@ function setImages(doc, values) {
   }
 }
 
+
+function setCarouseleInds(doc, img_ref){
+  // carousel_inds
+  const LEN = img_ref.images.length;
+  let liEls = '<li data-target="#demo" data-slide-to="0" class="active"></li>';
+  for(let i = 1; i<LEN; i++){
+    liEls = liEls + `<li data-target="#demo" data-slide-to="${i}"></li>`;
+  }
+  doc.getElementById("carousel_inds").innerHTML = liEls;
+}
+
+// slideshow_cont
+function setSlideShow(doc, img_ref){  
+  const LEN = img_ref.images.length;
+  let srcEls = "";
+  for(let i = 0; i<LEN; i++){
+    let src_txt = img_ref.images[i];
+    srcEls = srcEls + '<div class="carousel-item">'+
+    `<img id="imm-${i}" src="${src_txt}" alt="Avatar" class="card-img-top"></div>`;
+  }
+  doc.getElementById("slideshow_cont").innerHTML = srcEls;
+}

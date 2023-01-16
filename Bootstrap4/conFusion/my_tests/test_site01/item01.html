@@ -11,6 +11,7 @@
 
 <link rel="stylesheet" href="./css/itemStyle.css">
 <script src="./js/carousele.js"></script>
+<script src="./js/itemScripts.js"></script>
 
 <style>
 /* Collapeses with 770px screen */
@@ -24,12 +25,12 @@
 <div id="mySidebar" class="sidebar">
   <!-- <h2 style="color: white;padding: 8px 8px 8px 32px;">Natalia Kravtchouk</h2> -->
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <ul id="sidebarLinks" class="nav nav-pills flex-column">
+  <ul id="navLinks" class="nav nav-pills flex-column">
     <li class="nav-item">
       <a class="nav-link" href="index.html">Work</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link active" href="item01.html">Game Banners and Splashscreens</a>
+      <a class="nav-link" href="item01.html">Game Banners and Splashscreens</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="item02.html">Game Backgrounds (Adobe Photoshop)</a>
@@ -177,7 +178,7 @@
               <div id="demo" class="carousel slide" data-ride="carousel">
   
                   <!-- Indicators -->
-                  <ul class="carousel-indicators">
+                  <ul id="carousel_inds" class="carousel-indicators">
                     <li data-target="#demo" data-slide-to="0" class="active"></li>
                     <li data-target="#demo" data-slide-to="1"></li>
                     <li data-target="#demo" data-slide-to="2"></li>
@@ -191,7 +192,7 @@
                   </ul>
                   
                   <!-- The slideshow -->
-                  <div class="carousel-inner">
+                  <div id="slideshow_cont" class="carousel-inner">
                     <div class="carousel-item">
                       <img id="imm-1" src="image-1" alt="Avatar" class="card-img-top">
                     </div>
@@ -276,6 +277,10 @@
     document.getElementById("mySidebar").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
   }
+
+  setLinks(document,1);
+  setCarouseleInds(document, img_ref);
+  setSlideShow(document, img_ref);
 
 
   // Get the button
