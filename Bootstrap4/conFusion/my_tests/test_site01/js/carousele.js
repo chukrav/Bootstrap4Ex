@@ -68,6 +68,22 @@ function setImages(doc, values) {
   }
 }
 
+  //  <div>
+  //     <img id="imb-1" src="image-1" alt="Avatar"
+  //       class="card-img-top zoom-in">
+  //   </div> 
+function setImagesInn(doc, values) {
+  let right_images = "";
+  let LEN = values.images.length;
+  for (let i = 0; i<LEN; i++) {
+    let src = values.images[i];
+    right_images = right_images +
+    `<div><img id="imb-${i+1}" src="${src}" alt="Avatar"`+
+    'class="card-img-top zoom-in"></div>';    
+  }
+  doc.getElementById("right_images").innerHTML = right_images;
+}
+
 
 function setCarouseleInds(doc, img_ref){
   // carousel_inds

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="./css/itemStyle.css">
+<script src="./js/carousele.js"></script>
+<script src="./js/itemScripts.js"></script>
+
+<style>
+/* Collapeses with 770px screen */
+
+</style>
+</head>
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">&#8593</button>
+
+<div id="mySidebar" class="sidebar">
+  <!-- <h2 style="color: white;padding: 8px 8px 8px 32px;">Natalia Kravtchouk</h2> -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <ul id="navLinks" class="nav nav-pills flex-column">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Work</a>
+    </li>    
+    <li class="nav-item">
+      <a class="nav-link" href="item14.html">Contact</a>
+    </li>
+  </ul>
+</div>
+
+
+
+<div id="main">
+    <!-- <div id="mnavB" style="width: 100%;  background-color: #111;"> -->
+    <div id="mnavB" class="navpan" >
+      <!-- <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button> -->
+      <button id="openBn" class="openbtn" onclick="openNav()">☰ &#8593</button>
+      <div class="openbtn" style="float: right;" >Natalia Kravtchouk</div>
+    </div>   
+    
+
+    <div style="font-size: 3vw; text-align: center;" >Art for Commercials</div>
+    <!--             Second column: Images           -->
+  <div id="right_images">
+    <div>
+      <img id="imb-1" src="image-1" alt="Avatar"
+        class="card-img-top zoom-in">
+    </div>    
+  </div>
+    <!--           Futter              -->
+    <div style="margin: 100px 0px;">
+      <h3 style="text-align: center;">You may also like these</H3>
+
+      <div class="container50" style="width: 50%; float: left;">
+        <img id="imf-1" src="banner-img01" alt="Avatar" class="card-img-top">
+        <div class="overlay">
+          <a id="left-ban" class="text" href="gameBannersS01.html">
+            <span id="overlay-txt-left">text-1</span>
+          </a>
+        </div>
+
+      </div>
+      <div class="container50" style="width: 50%; float: right;">
+        <img id="imf-2" src="banner-img02" alt="Avatar" class="card-img-top">
+        <div class="overlay">
+          <a id="right-ban" class="text" href="gameBannersS01.html">
+            <span id="overlay-txt-right">text-2</span>
+          </a>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div class="jumbotron text-center" style="margin-bottom:0; padding: 100px;">
+      <h2>You can find me on</h2>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-pinterest"></a>
+      <a href="#" class="fa fa-vimeo"></a>
+    </div>
+
+    <div class="modal" id="myModal" >
+      <div class="modal-dialog modal-dialog-centered mw-100 w-100">
+        <div class="modal-content">    
+                 
+          <!-- Modal body -->
+          <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <div id="demo" class="carousel slide" data-ride="carousel">
+  
+                  <!-- Indicators -->
+                  <ul id="carousel_inds" class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>                    
+                  </ul>
+                  
+                  <!-- The slideshow -->
+                  <div id="slideshow_cont" class="carousel-inner">
+                    <div class="carousel-item">
+                      <img id="imm-1" src="image-1" alt="Avatar" class="card-img-top">
+                    </div>                     
+                  </div>
+                  
+                  <!-- Left and right controls -->
+                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+              </div>  
+          </div> 
+        </div>
+      </div>
+    </div>
+</div>  
+
+<script>
+  const img_ref = { images: ["../images/images_12/a96e6e30-4843-4268-9934-948ec9563e83_rw_1200.png",
+	"../images/images_12/f1ce2524-924f-4aea-badc-5d85f3761af2P2.jpg",
+	"../images/images_12/65ed90fe-32d6-4a33-a37d-af86144b25e0P2.jpg",  
+	"../images/images_12/a3d561aa-c351-4839-8e06-bd8b0e55b214.png",
+	"../images/images_12/81b8cb59-272a-428a-b38b-bc4e8928af57P2.jpg",
+	"../images/images_12/99392bba-1d2e-439d-beb3-3dcf03b38820P2.jpg",
+	"../images/images_12/eefa1c2c-bdc6-4a10-b1b4-da1d2df6d013.jpg",
+	"../images/images_12/6266728c-7516-4a61-9cad-79630a11b442P2.jpg"],
+	banners: [{src: "../images/work/W5L.png", href: "item09.html",
+            text: "<p>2017</p>Designe of environment, set dressing"},
+			 {src: "../images/work/W2L.png", href: "item03.html",
+            text: "<p>2017</p>Game Items Concept art"}]};
+
+  const imgs = document.getElementsByTagName("img");
+  
+    // setImages(document, img_ref);
+    setImagesInn(document, img_ref);
+    setBanners(document, img_ref);    
+
+    // console.log("Count of the img-s: "+(imgs.length-2)/2);
+    // console.log("Count of the img-s JSON: "+img_ref.images.length);
+    
+
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    //   document.getElementById("main").style.marginLeft = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+  }
+
+  setLinks(document,11);
+  setCarouseleInds(document, img_ref);
+  setSlideShow(document, img_ref);
+
+
+  // Get the button
+  let mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction()
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+   
+</body>
+</html> 
