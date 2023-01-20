@@ -17,7 +17,7 @@ const imagePressed = e => {
   const elt = document.getElementById(idm);
   elt.parentElement.setAttribute("class", "carousel-item active");
   
-  console.log(id);
+  console.log("Carousele ID: "+id);
   toggleCarousel();
 }
 
