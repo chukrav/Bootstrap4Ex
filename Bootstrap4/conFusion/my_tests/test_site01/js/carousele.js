@@ -12,12 +12,11 @@ const cleanAttributes = () => {
 
 const imagePressed = e => {
   let id = e.target.id;
-  let idm = "imm-" + id.split("-")[1];
+  let idx = parseInt(id.split("-")[1]) - 1;
+  let idm = "imm-" + idx;
   cleanAttributes();
   const elt = document.getElementById(idm);
-  elt.parentElement.setAttribute("class", "carousel-item active");
-  
-  console.log("Carousele ID: "+id);
+  elt.parentElement.setAttribute("class", "carousel-item active"); 
   toggleCarousel();
 }
 
@@ -44,11 +43,11 @@ function setBanners(doc, values) {
 
 function setImages(doc, values) {
   // const imgs = doc.getElementsByTagName("img");
-  console.log("imgs count: " + imgs.length);
+  // console.log("imgs count: " + imgs.length);
   let i = 0;
   let icorrect = true;
   for (let img of imgs) {
-    console.log(img.id);
+    // console.log(img.id);
     if (img.id.includes("imb")) {
       img.addEventListener("click", imagePressed);
       img.setAttribute("src", values.images[i]);
@@ -59,12 +58,28 @@ function setImages(doc, values) {
       if ((i > 0) & (icorrect === true)) {
         i = 0;
         icorrect = false;
-        console.log("------ i = 0 -------- ");
+        // console.log("------ i = 0 -------- ");
       }
       img.setAttribute("src", values.images[i]);
       i = i + 1;
     }
   }
+}
+
+  //  <div>
+  //     <img id="imb-1" src="image-1" alt="Avatar"
+  //       class="card-img-top zoom-in">
+  //   </div> 
+function setImagesInn(doc, values) {
+  let right_images = "";
+  let LEN = values.images.length;
+  for (let i = 0; i<LEN; i++) {
+    let src = values.images[i];
+    right_images = right_images +
+    `<div><img id="imb-${i+1}" src="${src}" alt="Avatar"`+
+    'class="card-img-top zoom-in"></div>';    
+  }
+  doc.getElementById("right_images").innerHTML = right_images;
 }
 
 
@@ -82,7 +97,7 @@ function setCarouseleInds(doc, img_ref){
 function setSlideShow(doc, img_ref){  
   const LEN = img_ref.images.length;
   let srcEls = "";
-  for(let i = 0; i<LEN; i++){
+  for(let i = 0; i<LEN; i+=1){
     let src_txt = img_ref.images[i];
     srcEls = srcEls + '<div class="carousel-item">'+
     `<img id="imm-${i}" src="${src_txt}" alt="Avatar" class="card-img-top"></div>`;
