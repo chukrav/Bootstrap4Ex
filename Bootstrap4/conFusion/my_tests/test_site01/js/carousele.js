@@ -16,19 +16,9 @@ const imagePressed = e => {
   let idm = "imm-" + idx;
   cleanAttributes();
   const elt = document.getElementById(idm);
-  elt.parentElement.setAttribute("class", "carousel-item active");
-  
-  console.log("imm-id: "+id);
+  elt.parentElement.setAttribute("class", "carousel-item active"); 
   toggleCarousel();
 }
-
-// for (let img of imgs) {        
-//     if(img.id.includes("imb")){
-//      img.addEventListener("click", imagePressed);
-//     }
-//     // img.addEventListener("click", imagePressed);
-// }
-
 
 function toggleCarousel(){
   $("#myModal").modal('toggle'); //see here usage
@@ -67,11 +57,7 @@ function setImages(doc, values) {
     }
   }
 }
-
-  //  <div>
-  //     <img id="imb-1" src="image-1" alt="Avatar"
-  //       class="card-img-top zoom-in">
-  //   </div> 
+  
 function setImagesInn(doc, values) {
   let right_images = "";
   let LEN = values.images.length;
@@ -82,6 +68,11 @@ function setImagesInn(doc, values) {
     'class="card-img-top zoom-in"></div>';    
   }
   doc.getElementById("right_images").innerHTML = right_images;
+  const imgs = doc.getElementsByTagName("img");
+  console.log("Set images Imm, count: "+imgs.length);
+  for(let img of imgs){
+    img.addEventListener("click", imagePressed);
+  }
 }
 
 
