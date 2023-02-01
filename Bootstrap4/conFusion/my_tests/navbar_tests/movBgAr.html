@@ -19,7 +19,11 @@
   <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
   <!-- <script src="../../node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script src="../../node_modules/popper.js/dist/umd/popper.min.js"></script>
+
   <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+  <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- my_tests/base_code.html -->
     <style>
         .top_block{
@@ -34,7 +38,7 @@
             /* position: fixed;
             bottom: 0; */
             background-color: rgb(59, 236, 200);
-            min-height: 200px;
+            min-height: 400px;
             width: 100%;
         }
 
@@ -45,6 +49,14 @@
             min-height: 100%;
             min-width: 100%;
             z-index: -1;
+        }
+
+        input, textarea {
+            background-color: aquamarine;
+        }
+
+        input:hover, textarea:hover {
+            background-color: aliceblue;
         }
 
     </style>
@@ -92,18 +104,64 @@
 <div class="bottom_block">    
     <!-- <h3>Bottom content</h3>
     <p>This is some text.This is some text.This is some text.This is some text.This is some text.</p> -->
-    <div class="row" style="text-align: center; font-size: large; margin: 10px;">
-        <div class="col-sm-4" style="text-align: left; font-size: 24px; margin-left: 20px; margin-right: 20px;">
-            <div style="background-color: black; color: white; font-size: 28px; margin-top: 10px;">
-                ABOUT:</div> 
-            <p>Ex Drummer is Arkadi Kravtchouk.</p>
-            <p>Multi-disciplinary designer, animator, director.</p>
-            <p>Telling stories through design since 2011.</p>
-            <p>Formerly Happy Drummers motion design studio. Now operating solo.</p>
-            <p>Based in Auckland, New Zealand.</p>
+    <div class="row" style="text-align: center; font-size: large; margin: 25px 50px 75px 100px;">
+        <div class="col" style="text-align: left; font-size: 24px; margin-top: 50px;">
+            <div style="background-color: black; color: white; font-size: 28px; max-width: fit-content; padding: 5px 10px;">
+                ABOUT:</div> <br>
+            <div style="width: 80%;">
+            <p>Ex Drummer is Arkadi Kravtchouk.</p><br>
+            <p>Multi-disciplinary designer, animator, director.</p><br>
+            <p>Telling stories through design since 2011.</p><br>
+            <p>Formerly Happy Drummers motion design studio. Now operating solo.</p><br>
+            <p>Based in Auckland, New Zealand.</p><br>
+            </div>
         </div>
-        <div class="col-sm-4">.col-sm-4</div>
-        <div class="col-sm-4">.col-sm-4</div>        
+        <div class="col" style="text-align: left; font-size: 24px; margin-top: 50px;">
+            <div style="background-color: black; color: white; font-size: 28px; max-width: fit-content; padding: 5px 10px;">
+                DROP A MESSAGE:</div> <br>
+                <div>
+                <form action="" method="get">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" id="fname" name="fname" 
+                            placeholder="First name">
+                        </td>
+                        <td>
+                            <input type="text" id="lname" name="lname" placeholder="Last name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="email" name="email" 
+                            placeholder="Email">
+                        </td>
+                        <td>
+                            <input type="text" id="phone" name="phone" placeholder="Phone">
+                        </td>                        
+                    </tr>
+                    <tr>
+                        <td  colspan="2">
+                            <textarea placeholder="Input notes" style="width: 100%;" rows="4"></textarea>
+                        </td>
+                        
+                    </tr>
+                </table>
+                <input type="submit" value="Submit">
+                </form>
+                </div>
+        </div>
+        <div class="col" style="text-align: left; font-size: 24px; margin-top: 50px;">            
+            <div style="background-color: black; color: white; font-size: 28px; max-width: fit-content; padding: 5px 10px;">
+                CONTACT:</div><br>
+                <div><a href="#" class="fa fa-envelope"></a>
+                    hello@exdrumer.com</div><br>
+                <div><a href="#" class="fa fa-mobile"></a>
+                    +64 20 40584926</div><br>
+                <div style="background-color: black; color: white; font-size: 28px; max-width: fit-content; padding: 5px 10px;">
+                    SOCIAL:</div><br>
+                <a href="#" class="fa fa-vimeo"></a>
+        </div>        
     </div>
 </div>
 
