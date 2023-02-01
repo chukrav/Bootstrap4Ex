@@ -51,10 +51,74 @@
 
         input, textarea {
             background-color: aquamarine;
+            padding: 20px 25px;
         }
 
         input:hover, textarea:hover {
             background-color: aliceblue;
+        }
+
+        .mbutton {
+            background-color: aliceblue;
+            color: brown;
+            padding: 20px 25px;
+        }
+
+        .mbutton:hover {
+            background-color:brown;
+            color: aqua;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        :root {
+            --telltop: 105%;
+            --mask-top: -100%;
+        }
+
+        .tellingstor {
+            width: fit-content;
+            background-color: aliceblue;
+            color: brown;
+            font-size: 1.2vw;
+            font-weight: bold;
+            position: relative;
+            left: 36%;
+            bottom: var(--telltop);
+            animation-name: example;
+            animation-duration: 8s;
+            animation-delay: -6s;
+            animation-iteration-count: 1;
+            box-shadow: 5px 3px aqua;
+        }
+
+        @keyframes example {                                 
+            75%  {left:15%; bottom:var(--telltop);}
+            100%  {left:36%; bottom:var(--telltop);}            
+        }
+
+        .drummask{
+            width: fit-content;
+            height: auto;
+            position: fixed;
+            top: 0px;
+            left: 15%;
+            animation-name: mask-example;
+            animation-duration: 4s;
+            animation-delay: -2s;
+        }
+
+        @keyframes mask-example {                       
+            50%  {top:var(--mask-top);}
+            100%  {top:0;}            
+        }
+
+        .drumlogo{
+            width: 60%;
+            height: auto;
+            object-fit: cover;
         }
 
     </style>
@@ -76,14 +140,19 @@
     <div class="col-sm-3">.col-sm-3</div>
 </div>  -->
 
-<div class="top_block" style="min-width: 100%;">
+<div class="top_block" style="min-width: 100%;"> 
+    <div class="drummask">
+        <img src="./Logo-Square-1br-01_002.webp" class="drumlogo">
+    </div>   
     <video autoplay muted loop id="topVideo" style="min-width: 100%;">
         <source src="file_002.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
     </video>
     <!-- <h1>My First Bootstrap Page</h1>
     <p>This is some text.</p> -->
+    <div class="tellingstor">"TELLING STORIES THROUGH DESIGN SINCE 2011"</div>
 </div>
+
 
 <!-- <div style="color: aliceblue; position: relative; top: 20px;"> -->
 <!-- <div style="color: aliceblue; height: 1080px; width: 1920px; font-size: 22px;">
@@ -145,7 +214,7 @@
                         
                     </tr>
                 </table>
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" style="float: right;" class="mbutton">
                 </form>
                 </div>
         </div>
