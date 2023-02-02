@@ -81,25 +81,34 @@
         }
 
         .tellingstor {
-            width: fit-content;
+            /* width: fit-content; */
+            width: 0%;
+            overflow: hidden;
             background-color: aliceblue;
             color: brown;
             font-size: 1.2vw;
             font-weight: bold;
+            white-space: nowrap;
             position: relative;
-            left: 15%;
+            left: 36%;
             bottom: var(--telltop);
-            animation-name: example;
-            animation-duration: 3s;
-            animation-delay: 1s;
+            animation-name: unroll;
+            animation-duration: 1s;
+            animation-delay: 3.5s;
             animation-fill-mode: forwards;
             animation-iteration-count: 1;
+            animation-timing-function: ease-out;
             box-shadow: 5px 3px aqua;
         }
 
         @keyframes example {                                 
             from  {left:15%; bottom:var(--telltop);}
             to  {left:36%; bottom:var(--telltop);}            
+        }
+
+        @keyframes unroll {                                 
+            from  {width: 0%; }
+            to  {width: 30%; }            
         }
 
         .drummask{
@@ -109,9 +118,10 @@
             top: var(--mask-top);
             left: 15%;
             animation-name: mask-example;
-            animation-duration: 2s;
+            animation-duration: 1.5s;
             animation-delay: 2s;
             animation-fill-mode: forwards;
+            animation-timing-function: ease-out;
         }
 
         @keyframes mask-example {                       
