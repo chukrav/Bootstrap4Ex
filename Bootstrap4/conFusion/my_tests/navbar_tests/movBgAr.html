@@ -87,34 +87,36 @@
             font-size: 1.2vw;
             font-weight: bold;
             position: relative;
-            left: 36%;
+            left: 15%;
             bottom: var(--telltop);
             animation-name: example;
-            animation-duration: 8s;
-            animation-delay: -6s;
+            animation-duration: 3s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
             animation-iteration-count: 1;
             box-shadow: 5px 3px aqua;
         }
 
         @keyframes example {                                 
-            75%  {left:15%; bottom:var(--telltop);}
-            100%  {left:36%; bottom:var(--telltop);}            
+            from  {left:15%; bottom:var(--telltop);}
+            to  {left:36%; bottom:var(--telltop);}            
         }
 
         .drummask{
             width: fit-content;
             height: auto;
             position: fixed;
-            top: 0px;
+            top: var(--mask-top);
             left: 15%;
             animation-name: mask-example;
-            animation-duration: 4s;
-            animation-delay: -2s;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
         }
 
         @keyframes mask-example {                       
-            50%  {top:var(--mask-top);}
-            100%  {top:0;}            
+            from  {top: var(--mask-top);}
+            to  {top: 0;}            
         }
 
         .drumlogo{
@@ -147,7 +149,7 @@
         <img src="./Logo-Square-1br-01_002.webp" class="drumlogo">
     </div>   
     <video autoplay muted loop id="topVideo" style="min-width: 100%;">
-        <source src="file.mp4" type="video/mp4">
+        <source src="./file_002.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
     </video>
     <!-- <h1>My First Bootstrap Page</h1>
@@ -165,7 +167,7 @@
     <!-- <img src="../images/images_01/3eb801f2-8b8f-488b-aecc-8c8dea336ca1.jpg"
     class="bg_image"> -->
     <video autoplay muted loop id="myVideo" class="bg_image">
-        <source src="file_002.mp4" type="video/mp4">
+        <source src="./file.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
     </video>
 </div>
